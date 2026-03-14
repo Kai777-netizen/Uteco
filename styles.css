@@ -1,0 +1,82 @@
+/* css/styles.css */
+
+:root {
+    --verde-uteco:    #006400;     /* Verde oscuro institucional */
+    --dorado-uteco:   #d4af37;     /* Dorado del logo */
+    --gris-claro:     #f8f9fa;
+    --gris-oscuro:    #343a40;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.bg-verde {
+    background-color: var(--verde-uteco) !important;
+}
+
+.text-verde {
+    color: var(--verde-uteco) !important;
+}
+
+.btn-dorado {
+    background-color: var(--dorado-uteco);
+    border-color: var(--dorado-uteco);
+    color: #000;
+}
+
+.btn-dorado:hover {
+    background-color: #b8962e;
+    border-color: #b8962e;
+}
+
+.btn-outline-verde {
+    color: var(--verde-uteco);
+    border-color: var(--verde-uteco);
+}
+
+.btn-outline-verde:hover {
+    background-color: var(--verde-uteco);
+    color: white;
+}
+
+.hero-section{
+    background-image: 
+        linear-gradient(rgba(0, 80, 0, 0.75), rgba(0, 80, 0, 0.85)),
+        url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1920&q=80");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.accordion-button {
+    background-color: #f1f8e9;
+    color: var(--verde-uteco);
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--verde-uteco);
+    color: white;
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+/* Responsividad extra si es necesario */
+@media (max-width: 576px) {
+    .hero-section {
+        min-height: 50vh;
+    }
+}
